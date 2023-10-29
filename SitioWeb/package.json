@@ -1,0 +1,20 @@
+{
+  "name": "as231s2_t08",
+  "version": "1.0.0",
+  "description": "IEP JOSÉ BUENAVENTURA SEPÚLVEDA (Favio HUAMAN | Santiago PRADA | Jhoan VICENTE)",
+  "main": "connection.js",
+  "scripts": {
+    "start": "nodemon connection.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  "alertifyjs": "^1.13.1",
+  "bootstrap": "^5.3.2",
+  "cors": "^2.8.5",
+  "express": "^4.18.2",
+  "mysql": "^2.18.1",
+  "nodemon": "^3.0.1"
+  }
+}

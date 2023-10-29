@@ -1,0 +1,540 @@
+/* Headboard */
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Oswald", sans-serif;
+    background-color: #1092de;
+    /* Pattern from https://www.heropatterns.com/ */
+    color: #1e272e;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  
+  /* Navigation */
+  .nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+  }
+  
+  .nav-brand {
+    width: 300px;
+  }
+  
+  /* Navbar Left */
+  .nav-main ul {
+    display: flex;
+  }
+  
+  .nav-main ul li {
+    padding: 10px;
+  }
+  
+  .nav-main ul li a {
+    padding: 2px;
+  }
+  
+  .nav-main ul li a:hover {
+    border-bottom: 2px solid #fff;
+  } 
+ 
+  hr {
+    margin: 10px 0;
+  }
+  /* Responsive Button */
+  .menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+  }
+  
+  /* SHOWCASE */
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+  }
+  .btn:hover {
+    opacity: 0.9;
+  }
+  .showcase {
+    width: 100%;
+    height: 550px;
+    background: url("https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/394300998_815099677288582_1213182005396861375_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=GDJjdO8Z-tIAX-qntdV&_nc_ht=scontent-lim1-1.xx&oh=00_AfDE77dIzwqZhZc8UxznkCHaRyl4iGzeHr-pRd9mFUdizA&oe=6540AF20") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .showcase h2,
+  .showcase p {
+    margin-bottom: 10px;
+  }
+  .showcase .btn {
+    margin-top: 20px;
+  }
+  .showcase h1{
+    font-size: 30px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+    color: #f8f7f7;
+  }
+
+/*Inicio de Talleres*/
+*{
+    margin:0;
+  }
+
+  .cards-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .article-card{
+    position:relative;
+    background:rgb(79, 189, 45);
+    min-width:300px;
+    max-width:350px;
+    min-height:400px;
+    max-height:500px;
+    box-shadow:0px 10px 50px #020202;
+    border-radius:5px;
+    margin:10px;
+    transition:0.3s ease;
+  }
+  
+  .article-card-head{
+    position:absolute;
+    width:100%;
+    height:55%;
+    overflow:hidden;
+    border-radius:5px 5px 0px 0px;
+  }
+  
+  .article-card-head img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    
+  }
+  
+  .article-card-body{
+    position:relative;
+    top:55%;
+    width:100%;
+    min-height:100px;
+    background: rgb(0, 204, 255);
+  }
+  
+  .article-card-body h2,p{
+    padding:10px;
+    padding-bottom:5px;
+  }
+  
+  .article-card-body h2{
+    font-weight:500;
+    
+  }
+  
+  .article-card-body p{
+    font-weight:300;
+    padding-top:0;
+    opacity:.5
+  }
+  
+  .article-card-details{
+    position:absolute;
+    bottom:10px;;
+    padding:10px;
+    height:50px;
+    display:inline-flex;
+  
+  }
+
+/*Actividades*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col {
+    width: calc(45% - 20px);
+}
+
+.container {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(172, 164, 164, 0.25);
+    border-radius: 10px;
+    background-position: center;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.back {
+    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+}
+
+.front:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner {
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.container .back {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.container:hover .back {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.container:hover .front {
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+}
+
+/* Agregar clases para fondos diferentes */
+.card1 {
+	background-image: url('https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/368461013_770019031796647_8631325921494357257_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=M7dZe2cC5FcAX93zof1&_nc_ht=scontent-lim1-1.xx&oh=00_AfA2QCWpcpF4bS4lIavfP8EiIpoqfYaV0X3E3oiFxG7icg&oe=653E221B');
+}
+
+.card2 {
+	background-image: url('https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/394300998_815099677288582_1213182005396861375_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=GDJjdO8Z-tIAX-qntdV&_nc_ht=scontent-lim1-1.xx&oh=00_AfDxS0o1MFtA5H134MBowiDrbypM4djlcPSgQaMBAtkaNQ&oe=653EB4E0');
+}
+
+.card3 {
+	background-image: url('https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/393305029_811664147632135_6774322636834947773_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zvFqbg5YZUIAX-1w1WS&_nc_ht=scontent-lim1-1.xx&oh=00_AfCa31jP5OX-lBDCRhM1mYTxnuOzBM1UjG0CMedtis_ujQ&oe=653E1C6A');
+}
+
+.card4 {
+    background: linear-gradient(45deg, #33FFFF, #00B3FF); /* Fondo para la cuarta tarjeta */
+}
+
+/* Resto de los estilos se mantienen igual */
+
+h2{
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;    
+}
+
+  /*Eventos*/
+  /*Cards*/
+
+  .card__content h2{
+	font-size: 30px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+    color: #020202;
+  }
+
+  .card-stripe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+    width: calc(50% - 40px); /* width for 2 cards is 50%, but need to take the margin into account, 20px on the left, 20px on the right = 40px; */
+}
+
+.card__image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+a.btn {
+    text-decoration: none;
+    color: #FFF;
+    background: red;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+    /*Convenios*/
+
+	.center2{
+		text-align: center;
+		font-size: 24px;
+		font-weight: bolder;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	  }
+	
+	  .cont-princ-slider {
+		margin: 50px;
+		height: 100px;
+		overflow: hidden;
+		width: 100%;
+	  }
+	  
+	  .slier-prin {
+		display: inline-flex;
+		-moz-animation: slider 8s infinite linear;
+		-webkit-animation: slider 10s infinite linear;
+		animation: slider 10s infinite linear;
+		height: 100%;
+		width: auto;
+	  }
+	  
+	  /*este es el carrucel infinito define aspecto*/
+	  /*tamaño de logos 330px*/
+	  .juegos_DWG {
+	
+		background:  #ffffff;
+		border: 1px solid #ffffff;
+		line-height: 100px;
+		height: 100%;
+		flex: 0 0 auto;
+		text-align: center;
+		width: 350px;
+		background-repeat: no-repeat;
+		background-position: center;
+	  }
+	  
+	  @keyframes slider {
+		to {
+		  -moz-transform: translateX(-50%);
+		  -webkit-transform: translateX(-50%);
+		  transform: translateX(-50%);
+		}
+	  }
+
+/*Site Footer*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #19a2f1;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    margin-right: 80px; /* Añade un margen derecho para separar de la columna del logo */
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%; /* Asegura que la imagen se ajuste al ancho de su contenedor */
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #fffbfb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+p {
+    text-transform: none;
+    font-weight: bold;
+}
