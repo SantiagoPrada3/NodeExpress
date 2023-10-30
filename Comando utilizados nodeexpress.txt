@@ -1,0 +1,20 @@
+1.sudo apt-get update: Actualiza la lista de paquetes disponibles.
+2.sudo apt-get upgrade: Actualiza los paquetes instalados.
+3.curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -: Agrega un repositorio de Node.js.
+4.sudo apt-get install -y nodejs: Instala Node.js.
+5.sudo apt install npm: Instala npm.
+6.node --version: Verifica la versión de Node.js.
+7.npm --version: Verifica la versión de npm.
+8.sudo apt-get install libcap2-bin: Instala el paquete libcap2-bin.
+9.sudo setcap cap_net_bind_service=+ep $(readlink -f $(which node)): Establece capacidades para Node.js.
+10.sudo npm install pm2 -g: Instala PM2 de forma global.
+11.pm2 startup: Configura PM2 para que se inicie en el arranque del sistema.
+12.git clone https://github.com/SantiagoPrada3/NodeExpress.git: Clona un repositorio de Git.
+13.pwd: Muestra el directorio de trabajo actual.
+14.ls -a: Lista archivos y directorios (incluyendo los ocultos) en el directorio actual.
+15.cd NodeExpress/: Cambia al directorio "NodeExpress".
+16.nano .env: Edita un archivo usando el editor de texto Nano.
+17.npm install: Instala las dependencias del proyecto.
+18.pm2 stop index.js: Detiene una aplicación Node.js en ejecución con PM2.
+19.pm2 start index.js: Inicia una aplicación Node.js utilizando PM2.
+20.pm2 save: Guardar los cambios.
